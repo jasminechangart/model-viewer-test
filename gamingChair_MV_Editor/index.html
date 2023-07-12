@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="gaming_chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="-218.8deg 90.23deg 4.585m" field-of-view="30deg" auto-rotate>
+      <button class="Hotspot" slot="hotspot-2" data-position="0.13893579197549943m -0.2609627943081858m -0.42897205124600707m" data-normal="-0.08263293804505069m 0.9788033847459472m -0.1873919196761702m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Cooling seat</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.012219652523705715m 0.31678275146145163m 0.232449149851005m" data-normal="-0.014125820974740914m -0.1477933860677071m -0.9889173758289573m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">180* recline</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
